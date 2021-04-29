@@ -1,0 +1,19 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:amazon-textract="http://www.mulesoft.org/schema/mule/amazon-textract"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/amazon-textract http://www.mulesoft.org/schema/mule/amazon-textract/current/mule-amazon-textract.xsd">
+
+    <amazon-textract:config name="config" configId="configId">
+        <amazon-textract:connection requiredParameter="aValue" />
+    </amazon-textract:config>
+
+    <flow name="sayHiFlow">
+        <amazon-textract:say-hi person="Mariano Gonzalez"/>
+    </flow>
+
+    <flow name="retrieveInfoFlow">
+        <amazon-textract:retrieve-info config-ref="config"/>
+    </flow>
+
+</mule>
