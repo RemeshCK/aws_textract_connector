@@ -3,10 +3,6 @@
 ...
 Add this to your pom.xml and then maven install
 ...
-
-
-Add this dependency to your application pom.xml
-
 ```
 <dependency>
     <groupId>org.mulesoft.com</groupId>
