@@ -1,22 +1,29 @@
 package org.mycompany.com.internal;
 
 import org.mule.runtime.extension.api.annotation.Operations;
-import org.mule.runtime.extension.api.annotation.connectivity.ConnectionProviders;
 import org.mule.runtime.extension.api.annotation.param.Parameter;
+import org.mule.runtime.extension.api.annotation.param.display.DisplayName;
+import org.mule.runtime.extension.api.annotation.param.display.Example;
 
-/**
- * This class represents an extension configuration, values set in this class are commonly used across multiple
- * operations since they represent something core from the extension.
- */
+
 @Operations(AmazonTextractOperations.class)
 public class AmazonTextractConfiguration {
 
   @Parameter
+  @DisplayName(value = "ACCESS KEY ID")
+  @Example(value = "dufhuwaehfiqwjeutcviuygfqufcbywqe")
   private String access_key_id;
+  
   @Parameter
+  @DisplayName(value = "SECRET KEY ID")
+  @Example(value = "djhbgufcfuyqgwbecgfywc")
   private String secret_key_id;
+  
   @Parameter
+  @DisplayName(value = "Region")
+  @Example(value = "us-east-1")
   private String region;
+  
 public String getAccess_key_id() {
 	return access_key_id;
 }

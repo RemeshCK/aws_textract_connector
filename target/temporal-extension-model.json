@@ -1,14 +1,14 @@
 {
   "name": "Amazon Textract",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "vendor": "Mulesoft",
   "category": "COMMUNITY",
   "xmlDsl": {
     "prefix": "amazon-textract",
     "namespace": "http://www.mulesoft.org/schema/mule/amazon-textract",
     "schemaLocation": "http://www.mulesoft.org/schema/mule/amazon-textract/current/mule-amazon-textract.xsd",
-    "schemaVersion": "1.0.0",
+    "schemaVersion": "1.0.3",
     "xsdFileName": "mule-amazon-textract.xsd"
   },
   "resources": [],
@@ -53,6 +53,10 @@
               },
               "allowedStereotypeModels": [],
               "name": "access_key_id",
+              "displayModel": {
+                "displayName": "ACCESS KEY ID",
+                "example": "dufhuwaehfiqwjeutcviuygfqufcbywqe"
+              },
               "description": "",
               "modelProperties": {}
             },
@@ -79,6 +83,10 @@
               },
               "allowedStereotypeModels": [],
               "name": "secret_key_id",
+              "displayModel": {
+                "displayName": "SECRET KEY ID",
+                "example": "djhbgufcfuyqgwbecgfywc"
+              },
               "description": "",
               "modelProperties": {}
             },
@@ -105,6 +113,10 @@
               },
               "allowedStereotypeModels": [],
               "name": "region",
+              "displayModel": {
+                "displayName": "Region",
+                "example": "us-east-1"
+              },
               "description": "",
               "modelProperties": {}
             },
@@ -353,7 +365,7 @@
                     "order": 1
                   },
                   "allowedStereotypeModels": [],
-                  "name": "Image",
+                  "name": "image",
                   "description": "",
                   "modelProperties": {}
                 }
@@ -447,7 +459,7 @@
               "modelProperties": {}
             }
           ],
-          "name": "DetectDocText",
+          "name": "DetectsDocText",
           "description": "",
           "modelProperties": {},
           "kind": "operation"

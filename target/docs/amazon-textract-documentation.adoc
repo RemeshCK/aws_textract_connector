@@ -25,23 +25,23 @@ Default configuration
 |======================
 | Name | Type | Description | Default Value | Required
 |Name | String | The name for this configuration. Connectors reference the configuration with this name. | | *x*{nbsp}
-| Access_key_id a| String |  |  | *x*{nbsp}
-| Secret_key_id a| String |  |  | *x*{nbsp}
+| ACCESS KEY ID a| String |  |  | *x*{nbsp}
+| SECRET KEY ID a| String |  |  | *x*{nbsp}
 | Region a| String |  |  | *x*{nbsp}
 | Expiration Policy a| <<ExpirationPolicy>> |  +++Configures the minimum amount of time that a dynamic configuration instance can remain idle before the runtime considers it eligible for expiration. This does not mean that the platform will expire the instance at the exact moment that it becomes eligible. The runtime will actually purge the instances when it sees it fit.+++ |  | {nbsp}
 |======================
 
 
 ==== Associated Operations
-* <<DetectDocText>> {nbsp}
+* <<DetectsDocText>> {nbsp}
 
 
 
 == Operations
 
-[[DetectDocText]]
-=== Detect Doc Text
-`<amazon-textract:detect-doc-text>`
+[[DetectsDocText]]
+=== Detects Doc Text
+`<amazon-textract:detects-doc-text>`
 
 
 ==== Parameters

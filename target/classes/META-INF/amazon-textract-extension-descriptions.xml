@@ -25,13 +25,13 @@
         <parameters/>
     </extension>
     <operations>
-        <operation name="DetectDocText">
+        <operation name="DetectsDocText">
             <description><![CDATA[]]></description>
             <parameters>
                 <parameter name="outputMimeType">
                     <description><![CDATA[The mime type of the payload that this operation outputs.]]></description>
                 </parameter>
-                <parameter name="Image">
+                <parameter name="image">
                     <description><![CDATA[]]></description>
                 </parameter>
                 <parameter name="target">
