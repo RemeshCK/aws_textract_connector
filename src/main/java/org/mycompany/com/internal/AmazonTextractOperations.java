@@ -66,11 +66,6 @@ public class AmazonTextractOperations {
           }
           
       }
-
-		
-
-
-
            
 	  return text ;
   		   }
